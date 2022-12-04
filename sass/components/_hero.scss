@@ -1,0 +1,30 @@
+.hero {
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index-hero/hero-bg.jpg);
+  max-width: 1600px;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+
+  padding: 200px 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  /*to center a button. Button is inline-block, and can be aligned by  */
+
+  &__title {
+    width: 696px;
+    /*to transfer correctly text to new line*/
+    margin: 0 auto;
+    /*to center h1 inside hero block. In block elements text auto-aligned to left side*/
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--c-text__white);
+  }
+}

@@ -1,0 +1,30 @@
+.clients {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--c-border__grey-clients);
+    border-radius: 4px;
+    height: 92px;
+    width: 170px;
+    color: var(--c-border__grey-clients);
+
+    transition: color 250ms var(--transition-cubic-bezier),
+      border-color 250ms var(--transition-cubic-bezier);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border-color: var(--c-primary__blue);
+    color: var(--c-primary__blue);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,36 @@
+.services {
+  padding-top: 0;
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    background-color: var(--c-label-bg__transparent);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--c-text__white);
+  }
+}

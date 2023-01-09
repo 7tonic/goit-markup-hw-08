@@ -4,9 +4,20 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
 }
 
 .section {
@@ -22,4 +33,4 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--c-text__black);
-} 
+}

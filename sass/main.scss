@@ -1,11 +1,17 @@
+/*utils*/
+@import 'utils/breakpoints';
 @import 'utils/mixins';
 @import 'utils/placeholders';
 @import 'utils/variables';
+
+/*base*/
 
 @import 'base/base';
 @import 'base/normalize';
 @import 'base/reset';
 
+/*components*/
+@import 'components/container';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/nav';

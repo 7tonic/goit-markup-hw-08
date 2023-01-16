@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid black;
+  outline-offset: -2px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    outline: 2px solid red;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    outline: 2px solid yellow;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    outline: 2px solid green;
+  }
+}

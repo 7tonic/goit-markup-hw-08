@@ -1,4 +1,15 @@
 .nav {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
   margin-left: 93px;
 
   &__list {

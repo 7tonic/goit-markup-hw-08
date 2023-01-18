@@ -26,7 +26,7 @@ body {
   color: var(--c-text__black);
 }
 
-.section {
+.section, .features__container {
   padding: 94px 0px;
 }
 
@@ -446,10 +446,17 @@ img {
 }
 
 .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
+  padding: 0 15px;
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .features__wrapper {
   display: -webkit-box;
@@ -461,7 +468,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
   background-color: var(--c-features-bg__grey);
   border-radius: 4px;
@@ -471,12 +477,43 @@ img {
   transition: box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
 }
+@media screen and (min-width: 768px) {
+  .features__wrapper {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__wrapper {
+    width: 270px;
+  }
+}
 .features__wrapper:hover, .features__wrapper:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .features__item {
-  width: 270px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 .features__title {
   margin-bottom: 10px;
@@ -485,7 +522,13 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--c-text__black);
+}
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
 }
 .features__description {
   font-size: 14px;

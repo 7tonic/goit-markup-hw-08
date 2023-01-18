@@ -1,7 +1,17 @@
 .features {
+  &__container {
+    @extend .section;
+  }
   &__list {
-    display: flex;
     gap: 30px;
+    padding: 0 15px;
+
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__wrapper {
@@ -10,7 +20,6 @@
     justify-content: center;
     align-items: center;
 
-    width: 270px;
     height: 120px;
 
     background-color: var(--c-features-bg__grey);
@@ -19,6 +28,13 @@
     margin-bottom: 30px;
 
     transition: box-shadow 250ms var(--transition-cubic-bezier);
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
   }
 
   &__wrapper:hover,
@@ -27,9 +43,21 @@
   }
 
   &__item {
-    width: 270px;
+    width: 450px;
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+      align-items: center;
+      justify-content: center;
+    }
   }
-
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
   &__title {
     margin-bottom: 10px;
 
@@ -38,8 +66,12 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+    text-align: center;
     color: var(--c-text__black);
+
+    @media screen and (min-width: $tablet) {
+      text-align: start;
+    }
   }
 
   &__description {

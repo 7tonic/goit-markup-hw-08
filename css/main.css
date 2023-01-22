@@ -1237,26 +1237,38 @@ img {
 }
 
 .cards {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
+  max-width: 450px;
+  height: 100%;
+  outline: solid yellow;
   -webkit-transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
-  max-width: 100%;
-  outline: solid yellow;
+  /*@media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 30px) / 3);
+  }*/
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 370px;
+  }
 }
 .card:hover, .card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1265,6 +1277,11 @@ img {
 .card__thumb {
   position: relative;
   overflow: hidden;
+  hight: 294px;
+  outline: solid purple;
+}
+.card__img {
+  height: 100%;
 }
 .card__overlay {
   position: absolute;

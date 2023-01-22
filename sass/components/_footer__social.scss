@@ -1,11 +1,16 @@
 .footer-social {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
+  @media screen and (max-width: 1190px) {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
   &__title {
-    display: block;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -17,9 +22,9 @@
 
   &__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-    justify-content: left;
-    align-items: left;
   }
 
   &__link {

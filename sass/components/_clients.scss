@@ -1,9 +1,47 @@
 .clients {
-  &__list {
-    display: flex;
-    gap: 30px;
+  @media screen and (max-width: 1990px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0;
   }
 
+  &__title {
+    @extend .section-title;
+    @media screen and (max-width: 1990px) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.17;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      margin-bottom: 50px;
+      padding-right: 15px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__item {
+    @media screen and (max-width: 767px) {
+      width: 210px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
+  }
   &__link {
     display: flex;
     justify-content: center;
@@ -11,7 +49,7 @@
     border: 1px solid var(--c-border__grey-clients);
     border-radius: 4px;
     height: 92px;
-    width: 170px;
+
     color: var(--c-border__grey-clients);
 
     transition: color 250ms var(--transition-cubic-bezier),

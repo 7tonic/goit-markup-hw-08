@@ -30,6 +30,11 @@
 
     outline: solid purple;
   }
+
+  &__img {
+    height: 100%;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;

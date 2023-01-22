@@ -1,11 +1,25 @@
 .portfolio-nav {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flext-start;
+  width: 100%;
+  margin-bottom: 40px;
+  gap: 15px 8px;
+
+  outline: solid orange;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   &__button {
-    padding: 6px 22px;
+    padding: 6px 25px;
     font-family: inherit;
     background-color: var(--c-portfolio-button-bg__grey);
     border-radius: 4px;
@@ -14,6 +28,8 @@
     font-weight: 500;
     border: none;
     cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.03em;
     transition: color 250ms var(--transition-cubic-bezier),
       background-color 250ms var(--transition-cubic-bezier),
       box-shadow 250ms var(--transition-cubic-bezier);

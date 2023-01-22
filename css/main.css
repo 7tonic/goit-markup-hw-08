@@ -1186,14 +1186,34 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: flext-start;
+      -ms-flex-pack: flext-start;
+          justify-content: flext-start;
+  width: 100%;
+  margin-bottom: 40px;
+  gap: 15px 8px;
+  outline: solid orange;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-nav {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-nav__button {
-  padding: 6px 22px;
+  padding: 6px 25px;
   font-family: inherit;
   background-color: var(--c-portfolio-button-bg__grey);
   border-radius: 4px;
@@ -1202,6 +1222,8 @@ img {
   font-weight: 500;
   border: none;
   cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
   -webkit-transition: color 250ms var(--transition-cubic-bezier), background-color 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: color 250ms var(--transition-cubic-bezier), background-color 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: color 250ms var(--transition-cubic-bezier), background-color 250ms var(--transition-cubic-bezier), box-shadow 250ms var(--transition-cubic-bezier);
@@ -1215,20 +1237,26 @@ img {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .card {
-  width: 370px;
   -webkit-transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier), -webkit-box-shadow 250ms var(--transition-cubic-bezier);
+  max-width: 100%;
+  outline: solid yellow;
 }
 .card:hover, .card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

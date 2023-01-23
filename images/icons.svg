@@ -2,7 +2,7 @@
   <defs>
 
     <symbol id="icon-burger" viewBox="0 0 32 32">
-    <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+    <path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
     </symbol>
 
     <symbol id="icon-antenna" viewBox="0 0 32 32">

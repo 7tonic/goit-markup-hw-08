@@ -5,17 +5,15 @@
 }
 
 .card {
-  max-width: 450px;
-  height: 100%;
-  outline: solid yellow;
-
   transition: box-shadow 250ms var(--transition-cubic-bezier);
+  border: 1px solid #eeeeee;
+  border-top: none;
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    max-width: 354px;
   }
   @media screen and (min-width: $desktop) {
-    width: 370px;
+    max-width: 370px;
   }
 
   /*@media screen and (min-width: $tablet) {
@@ -34,12 +32,12 @@
     position: relative;
     overflow: hidden;
     hight: 294px;
-
-    outline: solid purple;
+    cursor: pointer;
   }
 
   &__img {
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   &__overlay {
@@ -65,8 +63,6 @@
   }
   &__wrapper {
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
   }
 
   &__title {

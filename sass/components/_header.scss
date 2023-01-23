@@ -11,7 +11,7 @@
     }
   }
 
-  .menu-toggle {
+  .menu-toggle__burger {
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -20,20 +20,17 @@
 
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: var(--c-text__white);
     cursor: pointer;
-    border: none;
-    border-radius: 50%;
+
+    background-color: var(--c-text__white);
     outline: none;
+    border: none;
   }
 
   @media (min-width: 768px) {
-    .menu-toggle {
+    .menu-toggle__burger {
       display: none;
     }
-  }
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    fill: currentColor;
   }
 }

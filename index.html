@@ -62,8 +62,13 @@
           </ul>
         </div>
 
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle__burger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg
+            class="menu-toggle__burger--icon"
             width="24"
             height="24"
             fill="currentColor"
@@ -574,8 +579,8 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg>
+      <button class="menu-toggle__close js-close-menu">
+        <svg class="menu-toggle__close--icon">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
@@ -592,17 +597,18 @@
       </ul>
       <ul class="mobile-contacts__list list">
         <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+
+        <li class="mobile-contacts__item">
           <a class="mobile-contacts__link link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="mobile-contacts__item">
-          <a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
       </ul>
       <ul class="mobile-social__list list">
         <li class="mobile-social__item">
-          <a class="mobile-social__link" href="https://www.instagram.com/">Instagram</a>
+          <a class="mobile-social__link email link" href="https://www.instagram.com/">Instagram</a>
         </li>
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="https://twitter.com/">Twitter</a>

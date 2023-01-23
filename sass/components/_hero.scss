@@ -2,6 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
+  width: 100%;
   max-width: 480px;
   height: 400px;
   padding: 118px 0;
@@ -25,6 +26,7 @@
   @media screen and (min-width: $tablet) {
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/index-hero/hero-bg__tablet.jpg');
+    width: 100%;
     max-width: 768px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -37,6 +39,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    width: 100%;
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;

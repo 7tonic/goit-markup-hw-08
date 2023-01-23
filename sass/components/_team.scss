@@ -40,11 +40,13 @@
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (min-width: $tablet) {
-      width: 354px;
+      width: 100%;
+      max-width: 354px;
     }
 
     @media screen and (min-width: $desktop) {
-      width: 270px;
+      width: 100%;
+      max-width: 270px;
     }
   }
   &__item:not(last-child) {

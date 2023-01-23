@@ -10,9 +10,11 @@
   border-top: none;
 
   @media screen and (min-width: $tablet) {
+    width: 100%;
     max-width: 354px;
   }
   @media screen and (min-width: $desktop) {
+    width: 100%;
     max-width: 370px;
   }
 

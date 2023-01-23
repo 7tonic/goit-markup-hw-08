@@ -6,10 +6,10 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--c-text__white);
-  z-index: 999;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  transform: translateY(-100%);
+  transform: translateX(100%);
   transition: transform 250ms ease;
 }
 
@@ -78,7 +78,22 @@
   }
 }
 
+.mobile-social {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--c-primary__blue);
+}
+
 .mobile-social__link {
   text-decoration: none;
   list-style: none;
+}
+
+.mobile-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+  margin-right: 10px;
 }

@@ -722,6 +722,7 @@ img {
 }
 
 .features {
+  margin-bottom: 60px;
   /*&__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -749,7 +750,6 @@ img {
 .features__item {
   width: 100%;
   max-width: 450px;
-  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .features__item {
@@ -822,6 +822,7 @@ img {
   }
 }
 .features__description {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

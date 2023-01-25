@@ -784,7 +784,7 @@ img {
   height: 120px;
   background-color: var(--c-features-bg__grey);
   border-radius: 4px;
-  margin-bottom: 30px;
+  margin: 30px auto;
   -webkit-transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: -webkit-box-shadow 250ms var(--transition-cubic-bezier);
   transition: box-shadow 250ms var(--transition-cubic-bezier);
@@ -822,7 +822,6 @@ img {
   }
 }
 .features__description {
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

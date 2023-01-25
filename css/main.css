@@ -343,6 +343,19 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -872,16 +885,6 @@ img {
   color: var(--c-text__white);
 }
 
-@media screen and (max-width: 1990px) {
-  .clients {
-    padding: 60px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding: 94px 0;
-  }
-}
 @media screen and (max-width: 1990px) {
   .clients__title {
     font-weight: 700;

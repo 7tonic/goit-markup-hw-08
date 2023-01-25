@@ -281,7 +281,7 @@ body {
   color: var(--c-text__black);
 }
 
-.section, .features {
+.section {
   padding: 94px 0px;
 }
 
@@ -721,6 +721,7 @@ img {
 }
 
 .features {
+  padding: 60px;
   /*&__item:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;

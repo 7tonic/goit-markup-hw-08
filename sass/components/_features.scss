@@ -1,6 +1,5 @@
 .features {
-  @extend .section;
-
+  padding: 60px;
   &__list {
     @media screen and (min-width: $tablet) {
       display: flex;
@@ -18,7 +17,7 @@
 
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
     max-width: 450px;
     height: 120px;
 
@@ -30,11 +29,11 @@
     transition: box-shadow 250ms var(--transition-cubic-bezier);
 
     @media screen and (min-width: $tablet) {
-      width:100%;
+      width: 100%;
       max-width: 354px;
     }
     @media screen and (min-width: $desktop) {
-      width:100%;
+      width: 100%;
       max-width: 270px;
     }
   }
@@ -45,15 +44,15 @@
   }
 
   &__item {
-    width:100%;
+    width: 100%;
     max-width: 450px;
 
     @media screen and (min-width: $tablet) {
-      width:100%;
+      width: 100%;
       max-width: 354px;
     }
     @media screen and (min-width: $desktop) {
-      width:100%;
+      width: 100%;
       max-width: 270px;
       align-items: center;
       justify-content: center;
